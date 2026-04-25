@@ -43,6 +43,12 @@ A household has too many information channels — email across three accounts, s
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
 ![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white)
 
+## Related in the AIOS Portfolio
+
+- **[Google AI Toolkit](https://github.com/mikecutillo/google-ai-toolkit)** — Gmail + Drive AI toolkit; multi-account OAuth, email analysis, cleanup automation
+- **[M365 AI Toolkit](https://github.com/mikecutillo/m365-ai-toolkit)** — Microsoft 365 AI toolkit; mailbox analysis, OneDrive management via Graph API
+- **[BMO Discord Agent](https://github.com/mikecutillo/bmo-discord-agent)** — Discord-native family AI companion; the delivery channel for the morning brief
+
 ---
 
 Part of the AIOS portfolio. See the [profile README](https://github.com/mikecutillo) for the full system map.
