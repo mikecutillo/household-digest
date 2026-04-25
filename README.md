@@ -18,6 +18,23 @@ A household has too many information channels — email across three accounts, s
 - **Delivers to Discord** at a scheduled time with a consistent house-style formatting
 - **Archives past digests** to SQLite for retrospective review
 
+## Architecture
+
+```mermaid
+graph LR
+    Gmail[📧 Gmail × 3] --> Ingest
+    Cal[📅 Google Calendar] --> Ingest
+    M365[📨 Microsoft Graph] --> Ingest
+    News[📰 RSS feeds] --> Ingest
+    State[🏠 AIOS state] --> Ingest
+
+    Ingest[🔍 Filter + classify] --> Compose
+    Compose[🤖 Claude · per-section prompts] --> Sections
+
+    Sections[📋 Today · Overnight · Replies · Weekend] --> Discord[💬 Discord channel]
+    Sections --> Archive[(SQLite archive)]
+```
+
 ## Software
 
 | Layer | Tech |
